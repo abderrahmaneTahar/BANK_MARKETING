@@ -1,8 +1,8 @@
 file = ''
-with open("bank.csv") as f: 
+with open("../bank-full.csv") as f: 
     phrase = ','.join(f.read().split(";"))
     file+=phrase
 print(file)
-with open("banks.csv","w") as f:
+with open("../banks-full.csv","w") as f:
     f.write(file)
     f.close()
